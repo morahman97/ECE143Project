@@ -1,25 +1,25 @@
-company,industry,notes
-luna node,IT,cloud
-Pleroma,Media,social network
-Ramotion,Software,UI/UX design agency
-Best VPN,Media,VPN recommendation
-VPN Ranks,Media,VPN recommendation
-AirVPN,IT,VPN provider
-Fire Stick Tricks,Consulting,services
-Sex Toy Education,Education,
-TekHattan,Media,Tech Reviews
-Fediverse Network,Consulting,Fediverse analytics
-PapersOwl,Publishing,writing service
-Value Marketing,Marketing,finanical services and marketing
-MiniTool,Software,software
-SexToyCollective.com,Retail,
-Circle Ent.,Software,Video game developer
-Write.as,Publishing,writing
-Justhanks,Retail,blockchain gift giving
-easyDNS Technologies Inc.,IT,domain names
-vpsserver.com,IT,
-MoneyPug,Credit,credit broker
-WritersPerHour.com,Publishing,writing service
-Edusson,Publishing,writing service
-MiniTool Partition Wizard,Software,software
-YOURDOLL,Retail,
+Gold Sponsors,Industry,Description,gp
+luna node,IT,cloud,p
+Pleroma,Media,social network,p
+Ramotion,Software,UI/UX design agency,p
+Best VPN,Media,VPN recommendation,p
+VPN Ranks,Media,VPN recommendation,p
+AirVPN,IT,VPN provider,p
+Fire Stick Tricks,Consulting,services,p
+Sex Toy Education,NSFW,,p
+TekHattan,Media,Tech Reviews,p
+Fediverse Network,Consulting,Fediverse analytics,g
+PapersOwl,Publishing,writing service,p
+Value Marketing,Marketing,finanical services and marketing,p
+MiniTool,Software,software,p
+SexToyCollective.com,NSFW,,g
+Circle Ent.,Software,Video game developer,g
+Write.as,Publishing,writing,g
+Justhanks,Retail,blockchain gift giving,g
+easyDNS Technologies Inc.,IT,domain names,g
+vpsserver.com,IT,,g
+MoneyPug,Credit,credit broker,g
+WritersPerHour.com,Publishing,writing service,g
+Edusson,Publishing,writing service,g
+MiniTool Partition Wizard,Software,software,g
+YOURDOLL,NSFW,,g
