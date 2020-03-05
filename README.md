@@ -10,8 +10,8 @@ This project focuses on the comparison of Mastodon (one of the more popular dece
 ###### Decentralized
 1. Geographic Population
 2. Revenue model
-   -[Mastodon's Patreon](https://www.patreon.com/mastodon)
-   -[Mastodon Sponsors](https://joinmastodon.org/sponsors)
+   * [Mastodon's Patreon](https://www.patreon.com/mastodon)
+   * [Mastodon Sponsors](https://joinmastodon.org/sponsors)
 3. Communities
 
 ## Required Packages
