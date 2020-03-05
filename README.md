@@ -19,4 +19,5 @@ This project focuses on the comparison of Mastodon (one of the more popular dece
 - numpy
 - matplotlib
 - praw
+
 ## File Structure
