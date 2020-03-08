@@ -4,6 +4,7 @@
 popular_topics.py
 
 Generate a bar chart of most popular topics of Mastodon's 30 largest instances
+Also produces mastodon_topics.csv
 
 Created on Sat Mar  7 15:21:10 2020
 
@@ -11,6 +12,7 @@ Created on Sat Mar  7 15:21:10 2020
 """
 
 import json
+import csv
 import matplotlib.pyplot as plt
 from nltk.corpus import stopwords 
 from collections import Counter
@@ -40,6 +42,15 @@ def produce_topics():
         for word in words:
             if word not in stop_words: single_keywords.append(word)
     singleCounter = Counter(single_keywords)
+    
+    # Produce topics csv
+    topic_count = singleCounter.most_common()
+    with open('./Datasets/Mastodon/mastodon_topics.csv', 'w') as out:
+        csv_out = csv.writer(out)
+        csv_out.writerow(['topic', 'count'])
+        for topic in topic_count:
+            csv_out.writerow(topic)
+    
     topics = {i[0] : i[1] for i in singleCounter.most_common(30)}
     topicCategory = {
         'Other': int(topics['/']) + int(topics['science']) + int(topics['politics']) + int(topics['queer']) + int(topics['&']) + int(topics['-']) + int(topics['security']),
