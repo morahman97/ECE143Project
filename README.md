@@ -20,5 +20,9 @@ This project focuses on the comparison of Mastodon (one of the more popular dece
 - numpy
 - matplotlib
 - praw
+- nltk
+- gmplot
+- matplotlib-venn
 
 ## File Structure
+All modules are located in the Analysis Folder and all data is located in the Datasets folder.
