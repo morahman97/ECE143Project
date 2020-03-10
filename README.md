@@ -1,5 +1,5 @@
 # Group 8 - An Analysis on Decentralized Social Media Platforms
-This project focuses on the comparison of Mastodon (one of the more popular decentrialized social media platforms) and Reddit (a similar centralized platform).
+This project focuses on the comparison of Mastodon (one of the more popular decentrialized social media platforms) and Reddit (a similar centralized platform). To run code, download repository and run demo.ipynb in a jupyter notebook!
 
 ## Data
 ###### Centralized
