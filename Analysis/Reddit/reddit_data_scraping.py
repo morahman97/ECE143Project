@@ -14,28 +14,29 @@ reddit = praw.Reddit(client_id='JEISNEQ9UJHjHA', client_secret='CY4kBtqKfivAxAiF
 # posts = pd.DataFrame(posts,columns=['title', 'score', 'id', 'subreddit', 'url', 'num_comments', 'body', 'created'])
 # print(posts)
 
-filtering = pd.read_csv('mastodon_counts.csv')
-new_filt = filtering.sort_values(by='userCount', ascending=False)
-subreddit_all = list(new_filt['topic'])[33:35]
-# print(subreddit_all)
-#importing our error which we get if the subreddit doesnt exist
-from prawcore.exceptions import Forbidden
+def generate_reddit_without_user():
+  filtering = pd.read_csv('mastodon_counts.csv')
+  new_filt = filtering.sort_values(by='userCount', ascending=False)
+  subreddit_all = list(new_filt['topic'])[33:35]
+  # print(subreddit_all)
+  #importing our error which we get if the subreddit doesnt exist
+  from prawcore.exceptions import Forbidden
 
-#trying to comment (we may be banned)
-for i in subreddit_all:
-  try:
-      print(i)
-      posts = []
-      ml_subreddit = reddit.subreddit(i).hot(limit=10000)
-      for post in ml_subreddit:
-          posts.append([post.title, post.score, post.id, post.subreddit, post.url, post.num_comments, post.selftext, post.created])
-      posts = pd.DataFrame(posts,columns=['title', 'score', 'id', 'subreddit', 'url', 'num_comments', 'body', 'created'])
-      posts.to_csv('reddit_data_without_users.csv' , mode='a')
-  except Forbidden or NotFound: #might have to manually do it sometimes
-      continue
+  #trying to comment (we may be banned)
+  for i in subreddit_all:
+    try:
+        print(i)
+        posts = []
+        ml_subreddit = reddit.subreddit(i).hot(limit=10000)
+        for post in ml_subreddit:
+            posts.append([post.title, post.score, post.id, post.subreddit, post.url, post.num_comments, post.selftext, post.created])
+        posts = pd.DataFrame(posts,columns=['title', 'score', 'id', 'subreddit', 'url', 'num_comments', 'body', 'created'])
+        posts.to_csv('reddit_data_without_users.csv' , mode='a')
+    except Forbidden or NotFound: #might have to manually do it sometimes
+        continue
 
-
-subreddit_all = list(set(list(pd.read_csv('reddit_data_without_users.csv')['subreddit'])))
+def generate_reddit_without_user():
+  subreddit_all = list(set(list(pd.read_csv('reddit_data_without_users.csv')['subreddit'])))
 # print(subreddit_all)
 user_data = []
 
