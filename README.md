@@ -4,7 +4,7 @@ This project focuses on the comparison of Mastodon (one of the more popular dece
 ## Data
 ###### Centralized
 1. [Data Breaches](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
-2. Geographic Population 
+2. [Geographic Population](https://vincos.it/world-map-of-social-networks/)
 3. [Revenue Model](https://www.emarketer.com/content/reddit-to-cross-100-million-in-ad-revenues-in-2019)
 4. Communities
 5. [Cambridge Analytica myPersonality](https://web.archive.org/web/20180428085315/http://mypersonality.org/wiki/doku.php?id=download_databases#download_databases)
